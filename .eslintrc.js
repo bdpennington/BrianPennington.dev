@@ -1,0 +1,17 @@
+export default {
+  root: true,
+  env: {
+    node: true,
+  },
+  extends: [
+    'plugin:vue/essential',
+    'eslint:recommended',
+  ],
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
+  rules: {
+    
+  },
+  ignorePatterns: ['**/*.json', '**/*.md', 'node_modules'],
+};
