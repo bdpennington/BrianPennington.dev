@@ -10,7 +10,7 @@
     "docs:preview": "vitepress preview"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brian Pennington",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
