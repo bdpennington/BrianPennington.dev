@@ -34,7 +34,7 @@ export default defineConfig({
     ],
 
     // editLink: {
-    //   pattern: 'https://github.com/bdpennington:path',
+    //   pattern: 'https://github.com/bdpennington/personal-site:path',
     //   text: 'Edit this page on GitLab',
     // },
 
