@@ -7,7 +7,7 @@ export default defineConfig({
   lang: 'en-US',
   lastUpdated: true,
   // base: '',
-  outDir: './../dist',
+  outDir: 'dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     outline: [2, 4],
@@ -47,7 +47,7 @@ export default defineConfig({
 function nav() {
   return [
     {
-      text: 'About Me',
+      text: 'About',
       link: '/about/',
     },
     {
@@ -55,7 +55,7 @@ function nav() {
       link: '/blog/',
     },
     {
-      text: 'Contact Me',
+      text: 'Contact',
       link: '/contact/',
     },
   ];
