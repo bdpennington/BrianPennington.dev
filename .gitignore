@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/dist
+dist
 /.vitepress/cache
 
 /tests/e2e/videos/
