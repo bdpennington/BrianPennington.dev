@@ -6,9 +6,8 @@ export default defineConfig({
   description: "Brian Pennington's personal website: blog, resume, interesting stuff",
   lang: 'en-US',
   lastUpdated: true,
-  // base: '/docs',
-  // srcDir: 'docs',
-  outDir: 'dist',
+  base: '/',
+  outDir: './../dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     outline: [2, 4],
@@ -55,9 +54,9 @@ function nav() {
     //   text: 'Blog',
     //   link: '/blog/',
     // },
-    {
-      text: 'Contact',
-      link: 'contact',
-    },
+    // {
+    //   text: 'Contact',
+    //   link: 'contact',
+    // },
   ];
 }
