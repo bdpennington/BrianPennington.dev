@@ -5,18 +5,19 @@ title: Brian Pennington
 
 hero:
   name: Brian Pennington
+  image: ./assets/portrait-no-bg.png
   text: Full Stack Developer, Frontend Specialist
   tagline: A driven developer who is passionate about exploration, learning, and creating intuitive user experiences through technology to solve real problems.
   actions:
     - theme: brand
       text: About Me
-      link: /about/
-    - theme: brand
-      text: Blog
-      link: /blog/
+      link: about
+    # - theme: brand
+    #   text: Blog
+    #   link: /blog/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/bdpennington/personal-site
+      link: https://github.com/bdpennington/BrianPennington.dev
 
 features:
   - title: Raising All Boats

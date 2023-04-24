@@ -6,7 +6,8 @@ export default defineConfig({
   description: "Brian Pennington's personal website: blog, resume, interesting stuff",
   lang: 'en-US',
   lastUpdated: true,
-  // base: '',
+  // base: '/docs',
+  // srcDir: 'docs',
   outDir: 'dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -21,7 +22,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/bdpennington/personal-site',
+        link: 'https://github.com/bdpennington/BrianPennington.dev',
       },
       {
         icon: 'twitter',
@@ -48,15 +49,15 @@ function nav() {
   return [
     {
       text: 'About',
-      link: '/about/',
+      link: 'about',
     },
-    {
-      text: 'Blog',
-      link: '/blog/',
-    },
+    // {
+    //   text: 'Blog',
+    //   link: '/blog/',
+    // },
     {
       text: 'Contact',
-      link: '/contact/',
+      link: 'contact',
     },
   ];
 }
