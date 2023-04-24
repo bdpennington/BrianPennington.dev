@@ -14,10 +14,10 @@ hero:
       link: about
     # - theme: brand
     #   text: Blog
-    #   link: /blog/
+    #   link: blog/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/bdpennington/BrianPennington.dev
+      link: https://github.com/bdpennington/
 
 features:
   - title: Raising All Boats

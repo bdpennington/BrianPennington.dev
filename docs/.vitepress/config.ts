@@ -22,7 +22,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/bdpennington/BrianPennington.dev',
+        link: 'https://github.com/bdpennington/',
       },
       {
         icon: 'twitter',
@@ -35,7 +35,7 @@ export default defineConfig({
     ],
 
     // editLink: {
-    //   pattern: 'https://github.com/bdpennington/personal-site:path',
+    //   pattern: 'https://github.com/bdpennington/BrianPennington.dev:path',
     //   text: 'Edit this page on GitLab',
     // },
 
