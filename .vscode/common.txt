@@ -1,6 +1,7 @@
 apikey
 avess
 bdpennington
+brianpennington
 camelcase
 chartjs
 clonedeep
