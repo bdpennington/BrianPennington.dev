@@ -5,7 +5,7 @@ title: Brian Pennington
 
 hero:
   name: Brian Pennington
-  image: portrait-no-bg.png
+  image: portrait-with-icon-no-bg.png
   text: Full Stack Developer, Frontend Specialist
   tagline: A driven developer who is passionate about exploration, learning, and creating intuitive user experiences through technology to solve real problems.
   actions:
