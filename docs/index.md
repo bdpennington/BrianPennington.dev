@@ -5,7 +5,7 @@ title: Brian Pennington
 
 hero:
   name: Brian Pennington
-  image: ./assets/portrait-no-bg.png
+  image: portrait-no-bg.png
   text: Full Stack Developer, Frontend Specialist
   tagline: A driven developer who is passionate about exploration, learning, and creating intuitive user experiences through technology to solve real problems.
   actions:
@@ -36,7 +36,7 @@ features:
     details: |
       I'm a big believer in creating and working with small, self-organized, cross-functional teams.
       <br><br>
-      This includes business stakeholders as fist-class members to represent the business' needs and goals.
+      This includes business stakeholders as first-class members to represent the business' needs and goals.
   - title: Feedback
     details: |
       Proponent of creating feedback mechanisms throughout the product value pipeline, including product, design, and support teams -- and of course, the end users.
@@ -44,6 +44,6 @@ features:
       This is required to ensure the product that gets built is the product the business wants, and is the product the users need.
   - title: DX and Automation
     details: |
-      Create and utilize great tooling to automate all the repetitive stuff, including CI/CD pipelines, utility/ui-kit libraries to save developers from writing the same code over and over (usually in slightly different ways).
+      Create and utilize great tooling to automate all the repetitive stuff, including CI/CD pipelines and utility/ui-kit libraries to save developers from writing the same code over and over (usually in slightly different ways).
       <br><br>
       These tools should be treated as internal products that should meet the same standards as the business' products.
