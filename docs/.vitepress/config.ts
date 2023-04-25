@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Brian Pennington',
-  description: "Brian Pennington's personal website: blog, resume, interesting stuff",
+  description: "A driven developer who is passionate about exploration, learning, and creating intuitive user experiences through technology to solve real problems.",
   lang: 'en-US',
   lastUpdated: true,
   base: '/',
@@ -16,6 +16,10 @@ export default defineConfig({
     sidebar: {
       // '/projects/': projectsSideBar(),
       // '/entries/': entriesSidebar(),
+    },
+
+    search: {
+      provider: 'local'
     },
 
     socialLinks: [
@@ -47,8 +51,16 @@ export default defineConfig({
 function nav() {
   return [
     {
+      text: 'Home',
+      link: '/',
+    },
+    {
       text: 'About',
       link: 'about',
+    },
+    {
+      text: 'Slides',
+      link: '/slides/',
     },
     // {
     //   text: 'Blog',

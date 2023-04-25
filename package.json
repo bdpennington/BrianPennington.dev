@@ -8,11 +8,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "prepare:deploy": "./scripts/prepare.sh"
   },
   "keywords": [],
   "author": "Brian Pennington",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bdpennington/BrianPennington.dev.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "eslint": "^8.38.0",
