@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "pnpm run docs:build"
+  command = "pnpm run prepare:deploy"
 
 [build.environment]
   NODE_VERSION = "18"

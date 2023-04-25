@@ -20,7 +20,7 @@ I worked with DevOps engineers to create fully automated CI/CD pipelines, which 
 
 ## Institutionalizing Knowledge
 
-I am also extremely proud to have overseen and developed continuous learning workshops throughout the engineering org. I love to learn (I would call this my top talent) and believe that one of the best methods to building great teams (and trust!) is by nurturing and institutionalizing knowledge. Having mentored many of our junior developers, I discovered several common gaps in understanding and used them to create new learning materials -- usually designed as 30-60 minute interactive modules. (__Add slides example here__). This was met with great enthusiasm and helped developers round out skills relevant and adjacent to their work.
+I am also extremely proud to have overseen and developed continuous learning workshops throughout the engineering org. I love to learn (I would call this my top talent) and believe that one of the best methods to building great teams (and trust!) is by nurturing and institutionalizing knowledge. Having mentored many of our junior developers, I discovered several common gaps in understanding and used them to create new learning materials -- usually designed as 30-60 minute interactive modules. (example: <a href="/presentations/tooling-pkmgr-bundlers/index.html" target="_blank" rel="noreferrer">Tooling Part 1</a>). This was met with great enthusiasm and helped developers round out skills relevant and adjacent to their work.
 
 ## Contact Me
 

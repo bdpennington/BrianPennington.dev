@@ -12,9 +12,9 @@ hero:
     - theme: brand
       text: About Me
       link: about
-    # - theme: brand
-    #   text: Blog
-    #   link: blog/
+    - theme: brand
+      text: Slides
+      link: slides/
     - theme: alt
       text: View on GitHub
       link: https://github.com/bdpennington/
@@ -25,7 +25,7 @@ features:
       When others do well, I do well. I love learning and teaching others the fruits of that labor.
       <br><br>
       I feel that creating institutionalized knowledge is one of the most effective ways to build great teams.
-  - title: A Dog Will Hunt
+  - title: Explore & Experiment
     details: |
       If I'm interested in something, I am deeply driven to understand that something.
       <br><br>
@@ -37,7 +37,7 @@ features:
       I'm a big believer in creating and working with small, self-organized, cross-functional teams.
       <br><br>
       This includes business stakeholders as fist-class members to represent the business' needs and goals.
-  - title: Got Feedback?
+  - title: Feedback
     details: |
       Proponent of creating feedback mechanisms throughout the product value pipeline, including product, design, and support teams -- and of course, the end users.
       <br><br>
