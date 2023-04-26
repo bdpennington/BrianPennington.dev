@@ -12,6 +12,13 @@ This is a place for me to upload a variety of slide decks I've used as teaching 
 When viewing slides, you can enter presenter mode (and see presenter notes) by hovering your mouse over the bottom-left part of the screen to reveal the slide navigation, then click on the icon that looks like a person with a microphone.
 ::: -->
 
+::: tip
+When viewing slides, you can navigate by:
+
+- Right and left arrow keys on desktop
+- Swiping right and left on mobile (landscape for best view)
+:::
+
 ## Listing
 
 - <a href="/presentations/tooling-pkmgr-bundlers/index.html" target="_blank" rel="noreferrer">Tooling Part 1 - Package Managers & Bundlers</a>
