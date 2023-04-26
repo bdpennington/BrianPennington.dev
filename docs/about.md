@@ -24,4 +24,4 @@ I am also extremely proud to have overseen and developed continuous learning wor
 
 ## Contact Me
 
-If you are interested in my work, please contact me via any of the social links at the top-right of the page. I'd love to talk to you!
+If you are interested in my work, please contact me via any of the social links at the top-right of the page on desktop, and in the top nav for mobile views. I'd love to talk to you!
