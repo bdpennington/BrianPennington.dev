@@ -8,6 +8,26 @@ export default defineConfig({
   lastUpdated: true,
   base: '/',
   outDir: './../dist',
+  head: [
+    [
+      'script',
+      {
+        async: 'async',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-EQVL20F3PX',
+      },
+    ],
+    [
+      'script',
+      {},
+      `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EQVL20F3PX');
+      `
+    ],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     outline: [2, 4],
