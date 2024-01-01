@@ -18,14 +18,13 @@
     "type": "git",
     "url": "https://github.com/bdpennington/BrianPennington.dev.git"
   },
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "^8.38.0",
+    "eslint": "^8.56.0",
     "markdown-it-footnote": "^4.0.0",
-    "prettier": "^2.8.7",
-    "sass": "^1.61.0",
-    "typescript": "^5.0.4",
-    "vitepress": "1.0.0-alpha.71"
+    "prettier": "^2.8.8",
+    "sass": "^1.69.6",
+    "typescript": "^5.3.3",
+    "vitepress": "1.0.0-rc.34"
   },
   "pnpm": {
     "peerDependencyRules": {
