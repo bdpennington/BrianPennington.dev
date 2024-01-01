@@ -8,6 +8,7 @@ clonedeep
 createandpublish
 cropperjs
 croppings
+csspart
 datepicker
 devtools
 discoverability
@@ -19,6 +20,7 @@ filesize
 fleft
 fright
 getscript
+Gustafson
 iframe
 iheart
 infographic

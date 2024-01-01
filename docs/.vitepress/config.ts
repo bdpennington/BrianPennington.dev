@@ -1,4 +1,5 @@
-import { defineConfig } from 'vitepress';
+import { type DefaultTheme, defineConfig } from 'vitepress';
+import footnote from 'markdown-it-footnote';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -28,14 +29,18 @@ export default defineConfig({
       `
     ],
   ],
+  markdown: {
+    config: (md) => {
+      md.use(footnote)
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     outline: [2, 4],
     nav: nav(),
 
     sidebar: {
-      // '/projects/': projectsSideBar(),
-      // '/entries/': entriesSidebar(),
+      '/blog/': blogSidebar(),
     },
 
     search: {
@@ -68,7 +73,7 @@ export default defineConfig({
   },
 });
 
-function nav() {
+function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: 'Home',
@@ -79,16 +84,69 @@ function nav() {
       link: 'about',
     },
     {
+      text: 'Blog',
+      link: '/blog/',
+    },
+    {
       text: 'Slides',
       link: '/slides/',
     },
-    // {
-    //   text: 'Blog',
-    //   link: '/blog/',
-    // },
     // {
     //   text: 'Contact',
     //   link: 'contact',
     // },
   ];
+}
+
+function blogSidebar(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'December 2023',
+      collapsed: false,
+      items: [
+        {
+          text: 'EU Regs Will Kill OSS (Not)',
+          link: '/blog/2023-12/death-of-oss.md',
+        },
+        {
+          text: 'NYT Sues OpenAI',
+          link: '/blog/2023-12/nyt-sues-openai.md',
+        },
+      ],
+    },
+    {
+      text: 'March 2023',
+      collapsed: false,
+      items: [
+        {
+          text: 'AI-Assisted Coding',
+          link: '/blog/2023-03/ai-assisted-coding.md',
+        },
+      ],
+    },
+    {
+      text: 'September 2022',
+      collapsed: false,
+      items: [
+        {
+          text: 'XP for Large Projects',
+          link: '/blog/2022-09/try-xp.md',
+        },
+      ],
+    },
+    {
+      text: 'August 2022',
+      collapsed: false,
+      items: [
+        {
+          text: 'iHeartMedia Metaverse Concerts',
+          link: '/blog/2022-08/ihm-metaverse.md',
+        },
+        {
+          text: 'Testing as a Cost Savings and Reliability Practice',
+          link: '/blog/2022-08/why-test.md',
+        },
+      ],
+    }
+  ]
 }

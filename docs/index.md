@@ -13,6 +13,9 @@ hero:
       text: About Me
       link: about
     - theme: brand
+      text: Blog
+      link: blog/
+    - theme: brand
       text: Slides
       link: slides/
     - theme: alt

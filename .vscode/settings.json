@@ -6,9 +6,9 @@
   "editor.guides.bracketPairs": "active",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": false,
-    "source.fixAll.eslint": true,
-    "source.organizeImports": false
+    "source.fixAll": "always",
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "never"
   },
   "editor.unicodeHighlight.ambiguousCharacters": true,
   "editor.unicodeHighlight.includeStrings": true,
