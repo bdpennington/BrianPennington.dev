@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 import { type DefaultTheme, defineConfig } from 'vitepress';
 import footnote from 'markdown-it-footnote';
 
@@ -9,6 +11,9 @@ export default defineConfig({
   lastUpdated: true,
   base: '/',
   outDir: './../dist',
+  sitemap: {
+    hostname: 'https://brianpennington.dev',
+  },
   head: [
     [
       'script',
@@ -28,7 +33,98 @@ export default defineConfig({
         gtag('config', 'G-EQVL20F3PX');
       `
     ],
+    [
+      'meta',
+      {
+        name: 'author',
+        content: 'Brian Pennington',
+      },
+    ],
   ],
+  transformPageData(pageData, { siteConfig }) {
+    pageData.frontmatter.head ??= [];
+    const origin = 'https://brianpennington.dev';
+
+    const getPathFromFilepath = (filepath: string) => {
+      const path = filepath.split('/');
+      path.pop();
+      return path.join('/');
+    }
+
+    const getSocialImagePath = () => {
+      const socialImage: string | undefined = pageData.frontmatter.socialImage;
+      return socialImage
+        ? `${origin}/${getPathFromFilepath(pageData.relativePath)}/${socialImage}`
+        : `${origin}/brand-social-card.jpg`;
+    };
+
+    // Add social meta tags
+    pageData.frontmatter.head.push(
+      [
+        'meta',
+        {
+          property: 'og:title',
+          content: `${pageData.title} | ${siteConfig.site.title}`,
+        },
+      ],
+      [
+        'meta',
+        {
+          property: 'og:description',
+          content: pageData.description || siteConfig.site.description,
+        },
+      ],
+      [
+        'meta',
+        {
+          property: 'og:url',
+          content: `${origin}/${pageData.relativePath.replace(/.md$/, '.html')}`,
+        },
+      ],
+      [
+        'meta',
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        }
+      ],
+      [
+        'meta',
+        {
+          property: 'og:image',
+          content: getSocialImagePath(),
+        },
+      ],
+      [
+        'meta',
+        {
+          name: 'twitter:image',
+          content: getSocialImagePath(),
+        },
+      ],
+      [
+        'meta',
+        {
+          name: 'twitter:site',
+          content: '@penningtonbd',
+        },
+      ],
+      [
+        'meta',
+        {
+          name: 'twitter:title',
+          content: `${pageData.title} | ${siteConfig.site.title}`,
+        }
+      ],
+      [
+        'meta',
+        {
+          name: 'twitter:description',
+          content: pageData.description || siteConfig.site.description,
+        },
+      ],
+    );
+  },
   markdown: {
     config: (md) => {
       md.use(footnote)
@@ -61,11 +157,6 @@ export default defineConfig({
         link: 'https://www.linkedin.com/in/brian-pennington/',
       },
     ],
-
-    // editLink: {
-    //   pattern: 'https://github.com/bdpennington/BrianPennington.dev:path',
-    //   text: 'Edit this page on GitLab',
-    // },
 
     footer: {
       copyright: `Copyright © ${new Date().getFullYear()} Brian Pennington`,
@@ -100,6 +191,16 @@ function nav(): DefaultTheme.NavItem[] {
 
 function blogSidebar(): DefaultTheme.SidebarItem[] {
   return [
+    {
+      text: 'January 2024',
+      collapsed: false,
+      items: [
+        {
+          text: 'Commodification of Software Engineers',
+          link: '/blog/2024-01/devs-as-commodities.md',
+        },
+      ],
+    },
     {
       text: 'December 2023',
       collapsed: false,

@@ -10,8 +10,10 @@ cropperjs
 croppings
 csspart
 datepicker
+devs
 devtools
 discoverability
+divs
 draggable
 ecomm
 errmsg
@@ -50,10 +52,12 @@ offest
 onclick
 ondirty
 onvisible
+penningtonbd
 powerball
 powerpoint
 readonly
 Refreshable
+Regs
 rgba
 roboto
 rsssubtype

@@ -19,11 +19,13 @@ linkedin
 Metaverse
 Metaverses
 Nightwatch
+openai
 pinterest
 pnpm
 pocketcasts
 podtrac
 prepplus
+Primeagen
 Pytest
 shutterstock
 streamon
