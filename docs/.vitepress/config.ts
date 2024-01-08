@@ -40,6 +40,20 @@ export default defineConfig({
         content: 'Brian Pennington',
       },
     ],
+    [
+      'meta',
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      }
+    ],
+    [
+      'meta',
+      {
+        name: 'twitter:site',
+        content: '@penningtonbd',
+      },
+    ],
   ],
   transformPageData(pageData, { siteConfig }) {
     pageData.frontmatter.head ??= [];
@@ -58,72 +72,33 @@ export default defineConfig({
         : `${origin}/brand-social-card.jpg`;
     };
 
-    // Add social meta tags
-    pageData.frontmatter.head.push(
-      [
-        'meta',
-        {
-          property: 'og:title',
-          content: `${pageData.title} | ${siteConfig.site.title}`,
-        },
-      ],
-      [
-        'meta',
-        {
-          property: 'og:description',
-          content: pageData.description || siteConfig.site.description,
-        },
-      ],
-      [
-        'meta',
-        {
-          property: 'og:url',
-          content: `${origin}/${pageData.relativePath.replace(/.md$/, '.html')}`,
-        },
-      ],
-      [
-        'meta',
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image',
-        }
-      ],
-      [
-        'meta',
-        {
-          property: 'og:image',
-          content: getSocialImagePath(),
-        },
-      ],
-      [
-        'meta',
-        {
-          name: 'twitter:image',
-          content: getSocialImagePath(),
-        },
-      ],
-      [
-        'meta',
-        {
-          name: 'twitter:site',
-          content: '@penningtonbd',
-        },
-      ],
-      [
-        'meta',
-        {
-          name: 'twitter:title',
-          content: `${pageData.title} | ${siteConfig.site.title}`,
-        }
-      ],
-      [
-        'meta',
-        {
-          name: 'twitter:description',
-          content: pageData.description || siteConfig.site.description,
-        },
-      ],
-    );
+    const findAndReplaceOrAdd = (metaKey: string, metaKeyValue: string, content) => {
+      const index = pageData.frontmatter.head.findIndex((tag) => {
+        return tag?.[1]?.[metaKey] === metaKeyValue
+      });
+      if (index === -1) {
+        pageData.frontmatter.head.push(
+          [
+            'meta',
+            {
+              [metaKey]: metaKeyValue,
+              content,
+            },
+          ],
+        );
+      } else {
+        pageData.frontmatter.head[index][1].content = content;
+      }
+    }
+    
+    // Add/update dynamic social meta tags
+    findAndReplaceOrAdd('property', 'og:title', `${pageData.title} | ${siteConfig.site.title}`);
+    findAndReplaceOrAdd('property', 'og:description', pageData.description || siteConfig.site.description);
+    findAndReplaceOrAdd('property', 'og:url', `${origin}/${pageData.relativePath.replace(/.md$/, '.html')}`);
+    findAndReplaceOrAdd('property', 'og:image', getSocialImagePath());
+    findAndReplaceOrAdd('name', 'twitter:image', getSocialImagePath());
+    findAndReplaceOrAdd('name', 'twitter:title', `${pageData.title} | ${siteConfig.site.title}`);
+    findAndReplaceOrAdd('name', 'twitter:description', pageData.description || siteConfig.site.description);
   },
   markdown: {
     config: (md) => {
