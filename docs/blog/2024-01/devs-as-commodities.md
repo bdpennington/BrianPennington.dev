@@ -1,12 +1,10 @@
 ---
 socialImage: assets/devs-as-commodities.jpg
+keywords: Commodification, Commodification of Software Engineers
 head:
   - - meta
     - name: description
       content: An article describing what the commodification of software engineers means, how to identify it, and how to defend against it.
-  - - meta
-    - name: keywords
-      content: Software Engineering, Development, Software Development, Commodification, Brian Pennington, Pennington, Junior Developer, Senior Developer, Developer, SaaS, Software As a Service, Management, Project Management
 ---
 
 # The Commodification of Software Engineers

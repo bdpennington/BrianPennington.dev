@@ -57,7 +57,11 @@ export default defineConfig({
   ],
   transformPageData(pageData, { siteConfig }) {
     pageData.frontmatter.head ??= [];
+    pageData.headers ??= [];
+
     const origin = 'https://brianpennington.dev';
+    const defaultKeywords = 'Software Engineering, Development, Software Development, Brian Pennington, Pennington, Junior Developer, Senior Developer, Developer, SaaS, Software As a Service, Management, Project Management';
+    const pageKeywords = `${defaultKeywords}${pageData.frontmatter.keywords ? `, ${pageData.frontmatter.keywords}` : ''}`;
 
     const getPathFromFilepath = (filepath: string) => {
       const path = filepath.split('/');
@@ -73,10 +77,14 @@ export default defineConfig({
     };
 
     const findAndReplaceOrAdd = (metaKey: string, metaKeyValue: string, content) => {
-      const index = pageData.frontmatter.head.findIndex((tag) => {
+      const pageHeadIndex = pageData.headers.findIndex((tag) => {
         return tag?.[1]?.[metaKey] === metaKeyValue
       });
-      if (index === -1) {
+      const frontmatterHeadIndex = pageData.frontmatter.head.findIndex((tag) => {
+        return tag?.[1]?.[metaKey] === metaKeyValue
+      });
+  
+      if (pageHeadIndex === -1 && frontmatterHeadIndex === -1) {
         pageData.frontmatter.head.push(
           [
             'meta',
@@ -87,11 +95,19 @@ export default defineConfig({
           ],
         );
       } else {
-        pageData.frontmatter.head[index][1].content = content;
+        if (pageHeadIndex !== -1 && frontmatterHeadIndex !== -1) {
+          pageData.headers[pageHeadIndex][1].content = content;
+          pageData.frontmatter.head.splice(pageData.frontmatter.head[frontmatterHeadIndex], 1);
+        } else if (pageHeadIndex !== -1) {
+          pageData.headers[pageHeadIndex][1].content = content;
+        } else if (frontmatterHeadIndex !== -1) {
+          pageData.frontmatter.head[frontmatterHeadIndex][1].content = content;
+        }
       }
     }
-    
+
     // Add/update dynamic social meta tags
+    findAndReplaceOrAdd('name', 'keywords', pageKeywords);
     findAndReplaceOrAdd('property', 'og:title', `${pageData.title} | ${siteConfig.site.title}`);
     findAndReplaceOrAdd('property', 'og:description', pageData.description || siteConfig.site.description);
     findAndReplaceOrAdd('property', 'og:url', `${origin}/${pageData.relativePath.replace(/.md$/, '.html')}`);
