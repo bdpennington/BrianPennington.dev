@@ -1,13 +1,21 @@
 ---
-socialImage: assets/devs-as-commodities.jpg
-keywords: Commodification, Commodification of Software Engineers
+description: Is your role as a software engineer constantly misunderstood? As the field continues to grow and opportunities become increasingly competitive, engineers are being treated more and more like commodities -- undifferentiated from each other. That couldn't be farther from the truth. Read more to find out what this means for you and how to mitigate the personal and financial damages it can do to you.
 head:
   - - meta
-    - name: description
-      content: An article describing what the commodification of software engineers means, how to identify it, and how to defend against it.
+    - property: og:image
+      content: https://brianpennington.dev/devs-as-commodities.jpg
+  - - meta
+    - name: twitter:image
+      content: https://brianpennington.dev/devs-as-commodities.jpg
 ---
 
 # The Commodification of Software Engineers
+
+<br>
+
+![Devs as Commodities](../../public/devs-as-commodities.jpg)
+
+<br>
 
 This topic has come up several times recently in one way or another, and is something I've experienced numerous times during my tenure as a professional engineer. I've seen people laid off, had their expertise belittled, and even had it used as a weapon against them during performance reviews, simply because of ignorance (literal, not a pejorative).
 
