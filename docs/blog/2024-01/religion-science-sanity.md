@@ -3,10 +3,10 @@ description: Is theism or it's lack correlated with intelligence? A discussion o
 head:
   - - meta
     - property: og:image
-      content: https://brianpennington.dev/religion-science-sanity.jpg
+      content: https://brianpennington.dev/religion-science-sanity.jpeg
   - - meta
     - name: twitter:image
-      content: https://brianpennington.dev/religion-science-sanity.jpg
+      content: https://brianpennington.dev/religion-science-sanity.jpeg
 ---
 
 # On Religion, Science, and Sanity
