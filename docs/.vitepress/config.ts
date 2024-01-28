@@ -217,6 +217,10 @@ function blogSidebar(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         {
+          text: 'On Religions, Science, and Sanity',
+          link: '/blog/2024-01/religion-science-sanity.md',
+        },
+        {
           text: 'Commodification of Software Engineers',
           link: '/blog/2024-01/devs-as-commodities.md',
         },
