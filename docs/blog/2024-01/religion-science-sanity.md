@@ -37,7 +37,11 @@ As it relates to our daily lives and how we conduct ourselves in general, this i
 
 A theist places these unknowns in the hands of a god, while an atheist says that they're simply unknown. Unless you're about the business of attempting to prove a thing, this is a distinction without a difference.
 
-Consider this thought exercise: negative assertions about existence cannot be disproven. Here's an example: Unicorns don't exist.
+Consider this thought exercise: assertions about non-existence cannot always be proven. Here's an example:
+
+Unicorns don't exist.
+
+In this example, one must consider the case where unicorns do not, in fact, exist. But how would that be proven unless you have absolute knowledge of everything -- in other words, you'd have to be God.
 
 ## Opportunities To Learn
 
