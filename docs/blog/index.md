@@ -10,5 +10,6 @@ If you feel so compelled, let me know what you think via the social links in the
 
 Stuff I think is particularly interesting:
 
+- [Building Things with Other People](./2024-02/building-with-other-people.md)
 - [New EU Regulations will Kill OSS (Not)](./2023-12/death-of-oss.md)
 - [HeartMedia Launches iHeartLand in Fortnite Where Concerts, Podcasts and Gaming Collide in the Metaverse](./2022-08/ihm-metaverse.md)

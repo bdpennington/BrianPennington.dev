@@ -213,6 +213,16 @@ function nav(): DefaultTheme.NavItem[] {
 function blogSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
+      text: 'February 2024',
+      collapsed: false,
+      items: [
+        {
+          text: 'Building Things with Other People',
+          link: '/blog/2024-02/building-with-other-people.md',
+        },
+      ],
+    },
+    {
       text: 'January 2024',
       collapsed: false,
       items: [
@@ -273,6 +283,6 @@ function blogSidebar(): DefaultTheme.SidebarItem[] {
           link: '/blog/2022-08/why-test.md',
         },
       ],
-    }
-  ]
+    },
+  ];
 }
