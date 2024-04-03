@@ -213,6 +213,20 @@ function nav(): DefaultTheme.NavItem[] {
 function blogSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
+      text: 'April 2024',
+      collapsed: false,
+      items: [
+        {
+          text: 'AI Is Table Stakes for Software Engineers: Part 1',
+          link: '/blog/2024-04/table-stakes-ai-pt-1.md',
+        },
+        // {
+        //   text: 'AI Is Table Stakes for Software Engineers: Part 2',
+        //   link: '/blog/2024-04/table-stakes-ai-pt-2.md',
+        // },
+      ]
+    },
+    {
       text: 'February 2024',
       collapsed: false,
       items: [

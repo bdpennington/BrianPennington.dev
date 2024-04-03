@@ -25,6 +25,8 @@ getscript
 Gustafson
 iframe
 iheart
+incentivized
+incentivizes
 infographic
 infographics
 interwebs
@@ -55,6 +57,7 @@ onvisible
 penningtonbd
 powerball
 powerpoint
+PTSD
 readonly
 Refreshable
 Regs
@@ -64,6 +67,7 @@ rsssubtype
 scrollto
 smcs
 socialmediaconnection
+Substack
 tabindex
 timepicker
 tweditor

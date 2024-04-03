@@ -5,8 +5,10 @@ beamer
 chargify
 chartable
 chmln
+Coursera
 Craiyon
 DALL
+Damka's
 deezer
 eclincher
 Fortnite
@@ -32,10 +34,14 @@ shutterstock
 streamon
 Tabnine
 tiktok
+Tivadar
 topicpulse
 topline
 tunein
 twistedwave
+Udemy
+Underfitted
 unplugin
+Valdarrama
 vitepress
 wavesurfer
