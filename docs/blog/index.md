@@ -10,6 +10,6 @@ If you feel so compelled, let me know what you think via the social links in the
 
 Stuff I think is particularly interesting:
 
+- AI is Table Stakes for Software Engineers ([Part 1](./2024-04/table-stakes-ai-pt-1.md), [Part 2](./2024-04/table-stakes-ai-pt-2.md))
 - [Building Things with Other People](./2024-02/building-with-other-people.md)
 - [New EU Regulations will Kill OSS (Not)](./2023-12/death-of-oss.md)
-- [HeartMedia Launches iHeartLand in Fortnite Where Concerts, Podcasts and Gaming Collide in the Metaverse](./2022-08/ihm-metaverse.md)

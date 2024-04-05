@@ -1,8 +1,6 @@
-/// <reference types="vite/client" />
-
 import { type DefaultTheme, defineConfig } from 'vitepress';
 import footnote from 'markdown-it-footnote';
-import { origin, defaultKeywords, twitterHandle } from '../utils/constants';
+import { origin, twitterHandle } from '../utils/constants';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -217,13 +215,13 @@ function blogSidebar(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         {
-          text: 'AI Is Table Stakes for Software Engineers: Part 1',
+          text: 'AI Is Table Stakes for SWEs: Part 1',
           link: '/blog/2024-04/table-stakes-ai-pt-1.md',
         },
-        // {
-        //   text: 'AI Is Table Stakes for Software Engineers: Part 2',
-        //   link: '/blog/2024-04/table-stakes-ai-pt-2.md',
-        // },
+        {
+          text: 'AI Is Table Stakes for SWEs: Part 2',
+          link: '/blog/2024-04/table-stakes-ai-pt-2.md',
+        },
       ]
     },
     {
