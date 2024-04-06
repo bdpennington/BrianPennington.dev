@@ -8,7 +8,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
+    "source.organizeImports": "never",
+    "markdownlint.fixAll": "explicit"
   },
   "editor.unicodeHighlight.ambiguousCharacters": true,
   "editor.unicodeHighlight.includeStrings": true,
@@ -48,5 +49,10 @@
   "prettier.enable": true,
   "prettier.printWidth": 100,
   "prettier.semi": true,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+
+  "markdownlint.config": {
+    "MD033": false,
+    "MD024": false,
+  }
 }
