@@ -27,7 +27,8 @@
     "prettier": "^3.2.5",
     "sass": "^1.74.1",
     "typescript": "^5.4.4",
-    "vitepress": "1.0.2"
+    "vitepress": "1.0.2",
+    "vue": "^3.4.21"
   },
   "pnpm": {
     "peerDependencyRules": {
