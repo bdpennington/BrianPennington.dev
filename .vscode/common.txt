@@ -21,6 +21,7 @@ eventcache
 filesize
 fleft
 fright
+frontends
 getscript
 Gustafson
 iframe
@@ -45,6 +46,7 @@ Metaset
 Metasets
 mixins
 mouseleave
+MTTR
 multiselect
 nbsp
 nodenext
@@ -55,6 +57,7 @@ onclick
 ondirty
 onvisible
 penningtonbd
+pkmgr
 powerball
 powerpoint
 PTSD
