@@ -12,7 +12,7 @@ head:
 
 # AI Is Table Stakes for Software Engineers: Part 2
 
-In part 1 of this series, I describe why I think understanding and effectively utilizing AI will be invaluable, and in fact completely necessary, for software engineers in the future.
+In [part 1](./table-stakes-ai-pt-1.md) of this series, I described why I think understanding and effectively utilizing AI will be invaluable, and in fact completely necessary, for software engineers in the future.
 
 In part 2 of the series, we'll look at how an engineer at any level might accomplish that.
 
@@ -103,6 +103,10 @@ That said, you should always do your own research and find the resources that wo
 
 - basic concepts of data science and engineering
 - the most common models used in the real-world
+  - regression models (linear, polynomial, logistic)
+  - neural networks
+  - decision trees
+  - k-nearest neighbor
 - various techniques for how to train and fine-tune those models
 - what kinds of problems can be solved by each
 - how to put those models into production
@@ -116,3 +120,5 @@ Remember when I related the reasons for why I needed someone to help me get star
 ### Next Steps
 
 Easy. Whatever you want. You've acquired an invaluable, in-demand skill set, and the tools necessary to make intelligent decisions about where to take your career, even if it's not closely focused on AI.
+
+A really important takeaway I want you to understand here (at the risk of sounding repetitive) is that this is still **the beginning**. If you've done the above (or accomplished them in some other way), you have constructed the basis for future learning. Don't stop. Read more. Experiment. Build things. Collaborate with others and build things together -- you'll learn faster and accomplish more with two or more minds than you can on your own. Whatever you do, don't stop here.

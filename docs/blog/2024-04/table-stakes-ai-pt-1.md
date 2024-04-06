@@ -85,9 +85,9 @@ Academia doesn't teach people how things work in the real world. The real world 
 
 That said, before anyone thinks I'm suggesting that people skip college: go to college if you can, and do it as cheaply as you can; a head start is a head start. I personally spent a lot of time at a community college, exploring a wide variety of interests -- I would never trade this away. What I mean is that no college should not preclude you from pursuing a career in software engineering.
 
-## Stay Tuned for Part 2 - How to Actually Learn This Stuff
+## Part 2 - How to Actually Learn This Stuff
 
-In part 2, I'll cover an actionable plan you can use, or at least start from, to help you build the skills you need to be stay competitive as a software engineer.
+In [part 2](./table-stakes-ai-pt-2.md), I'll cover an actionable plan you can use, or at least start from, to help you build the skills you need to be stay competitive as a software engineer.
 
 My intention is to provide a reasonable and measured approach, with a clear, but flexible roadmap that anyone can follow to get where they want to be.
 
