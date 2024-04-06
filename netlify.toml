@@ -3,4 +3,4 @@
   command = "pnpm run prepare:deploy"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
