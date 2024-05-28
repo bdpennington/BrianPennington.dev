@@ -211,6 +211,20 @@ function nav(): DefaultTheme.NavItem[] {
 function blogSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
+      text: 'May 2024',
+      collapsed: false,
+      items: [
+        {
+          text: 'Review: Fundamentals of Data Engineering',
+          link: '/blog/2024-05/book-fundamentals-of-data-engineering.md',
+        },
+        {
+          text: 'Review: Engineering Management for the Rest of Us',
+          link: '/blog/2024-05/book-engineering-management.md',
+        },
+      ],
+    },
+    {
       text: 'April 2024',
       collapsed: false,
       items: [
